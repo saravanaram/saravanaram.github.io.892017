@@ -1,0 +1,34 @@
+title: "saravanaram.net"
+url: "saravanaram.net"
+excerpt_separator: <!--excerpt-->
+
+#author:
+name: "Saravanan"
+email: "saravanan.r@outlook.com"
+twitter: "https://www.twitter.com/saravanaram"
+github: "https://www.github.com/saravanaram"
+linkedin: "https://www.linkedin.com/in/saravanan"
+hackernews: "https://news.ycombinator.com/user?id=saravanaram"
+
+gems:
+  - jekyll-redirect-from
+
+sass:
+  style: compressed
+
+kramdown:
+  input: GFM
+
+compress_html:
+  clippings: []
+  comments: ['all']
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+paginate: 1
+
+exclude: [README.markdown, package.json, node_modules, Gemfile, Gemfile.lock]
