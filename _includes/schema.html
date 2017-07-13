@@ -1,0 +1,46 @@
+<!-- schema -->
+{% if page.excerpt %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title }}",
+    "author": "{{ site.name }}",
+    "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+    "publisher": 
+    {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "logo": 
+      {
+        "@type": "ImageObject",
+        "url": "http://saravanaram.net/assets/images/profile_photo.jpg",
+        "width": "400",
+        "height": "400"
+      }
+    },
+    "image": 
+    {
+        "@type": "ImageObject",
+        "url": "http://saravanaram.net/assets/images/profile_photo.jpg",
+        "width": "400",
+        "height": "400"
+    },
+    {% if page.date %}
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}"
+    {% endif %}
+  }
+</script>
+{% else %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": "{{ site.name }}",
+    "keywords": "Saravanan, developer",
+    "description": "Personal blog of Saravanan."
+  }
+</script> 
+{% endif %}	
