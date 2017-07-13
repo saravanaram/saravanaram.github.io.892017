@@ -2,9 +2,11 @@
 layout: "standard"
 ---
 <article>
+
+<div class="content">
 <div class="text-center text-capitalize"><h2>{{ page.title }}</h2></div>
+
 <div class="row text-center">posted {{ page.date | date_to_long_string }}</div>
-<div class="content">{{ content }}</div>
-</div>
+{{ content }}
 </div>
 </article>
