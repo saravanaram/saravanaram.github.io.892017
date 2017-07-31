@@ -3,6 +3,7 @@ title:
 layout: "standard"
 ---
 
+
 {% for post in paginator.posts %}
 <a href="{{ post.url }}">
 <span>{{ post.date | date_to_string }} &raquo;</span> {{ post.title }}
